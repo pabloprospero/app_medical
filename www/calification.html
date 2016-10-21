@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gwipe simil app</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
+</style>
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="cland Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!--animated-css-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<style>
+      
+     #form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+	  
+    </style>
+
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!--/animated-css-->
+
+
+</head>
+	
+<body>
+<body class="cbp-spmenu-push">
+
+<!-- header -->
+	<div class="banner1">
+	<div class="container">
+			<div class="header">
+			 <div class="top-nav">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+					<h3>Menu</h3>
+						<a href="index.html">Inicio</a>
+						<a href="maps.html">Mapa</a>
+						<a href="index.html">Califica</a>
+						<!--<a href="index.html">Services</a>
+						<a href="index.html">About</a>
+						<a href="index.html">Products</a>-->
+				</nav>
+				<div class="main buttonset">	
+						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+						<!--<span class="menu"></span>-->
+				</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="js/classie.js"></script>
+				<script>
+				var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+				showRightPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
+
+				function disableOther( button ) {
+					if( button !== 'showRightPush' ) {
+						classie.toggle( showRightPush, 'disabled' );
+					}
+				}
+			 </script>
+			</div>
+			<div class="logo wow fadeInUp" data-wow-delay="0.5s">
+				 <!--<a href="index.html"><img src="images/logo.png" alt=""/></a>-->
+			</div>
+			<!--<div class="sign-in-up">
+				<ul>
+					<li><a href="sign-in.html">Sign in</a></li>
+					<li><a href="sign-up.html" class="hvr-shutter-in-vertical up">Sign up</a></li>
+				</ul>
+			</div>
+		<div class="clearfix"></div>-->
+		</div>
+	</div>
+	</div>
+<!-- //header -->
+<!-- sign-up -->
+	
+	<div class="container" style="height: 100%; width: 100%">
+		
+		<center>
+		<h3> Califica el Servicio</h3>
+		<h5>Jorge Sanchez ::: <b>Odontología Mayo</b></h5>
+		<img src="images/odonlogo.png" width="100">
+	<div class="sign-in-form">
+			<div class="in-form">	
+<form>		
+  <p class="clasificacion">
+    <input id="radio1" name="estrellas" value="5" type="radio"><!--
+    --><label for="radio1">★</label><!--
+    --><input id="radio2" name="estrellas" value="4" type="radio"><!--
+    --><label for="radio2">★</label><!--
+    --><input id="radio3" name="estrellas" value="3" type="radio"><!--
+    --><label for="radio3">★</label><!--
+    --><input id="radio4" name="estrellas" value="2" type="radio"><!--
+    --><label for="radio4">★</label><!--
+    --><input id="radio5" name="estrellas" value="1" type="radio"><!--
+    --><label for="radio5">★</label>
+  </p>
+
+		<textarea placeholder="Comments..." cols="30" rows="4"></textarea>
+		
+		
+		<div class="all-awards">
+								<a href="#" class="hvr-shutter-in-vertical">Calificar</a>
+							</div>
+		</form>
+		</center>
+		
+		
+			</div>
+	</div>	
+	
+	
+<!-- //sign-up -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<p>Desarrollado por <a href="http://www.prosperosoft.com.ar/">Prospero Soft</a></p>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
